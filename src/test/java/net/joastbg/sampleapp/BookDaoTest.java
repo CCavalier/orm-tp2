@@ -1,8 +1,10 @@
 package net.joastbg.sampleapp;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -32,7 +34,7 @@ public class BookDaoTest {
 	public void setUp() {
 
 	}
-	
+
 	@Test
 	public void testPersist(){
 		Long id = bookDao.persist(new Book("test"));
